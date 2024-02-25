@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <main>
+            <section class="encript-desencript">
+                <div class="area-encriptacion">
+                    <textarea id="texto" class="text" placeholder="Ingrese el texto aquí"></textarea>
+
+                    <p class="aviso"><img class="exclamation" src="imagenes/exclamation.svg" alt="Signo de exclamación"> Sólo letras minúsculas y sin acentos</p>
+
+                    <div class="boton">
+                        <button class="encript" onclick="botonEncript(); reemplazar()">Encriptar</button>
+                        <button class="desencript" onclick="botonDesencript(); reemplazar()">Desencriptar</button>
+                    </div>
+                </div>     
+                <div class="salida">
+                        <textarea id="texto-salida" class="output-text" style="display: none;"></textarea>
+                        <div id="imagen-mensaje" class="imagen-mensaje">
+                            <img class="lupa" src="imagenes/lupa.jpg" alt="imagen de busqueda de texto">
+                            <p><strong>Ningún mensaje fue encontrado</strong></br></br>Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+                        <button id="copy" class="copy" onclick="copiar()" style="display: none;">Copiar <img class="logo_copy" src="imagenes/copy.svg" alt="logo de copiar"></button>
+                </div>            
+            </section>
+        </main>
+
+        <footer>
+            <p>Oswaldo Alejandro Gasca Ramos</p>
+            <a href="https://www.linkedin.com/in/oswaldo-alejandro-gasca-ramos-2705vb" target="_blank"><img class="icon" src="imagenes/linkedin.svg" alt="logo de linkedin"></a>
+            <a href="https://github.com/Gasca78" target="_blank"><img class="icon" src="imagenes/github.svg" alt="logo de github"></a>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
