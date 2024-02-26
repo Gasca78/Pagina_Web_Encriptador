@@ -2,9 +2,9 @@ const getText = document.querySelector("#texto");
 const outputText = document.querySelector("#texto-salida");
 const matriz = [
     ["i", "imes"],
-    ["e", "enter"],
-    ["a", "ai"],
     ["o", "ober"],
+    ["a", "ai"],
+    ["e", "enter"],
     ["u", "ufat"],
 ];
 
